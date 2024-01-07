@@ -1,0 +1,111 @@
+body {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar,
+.header {
+ background-color: #1f2937;
+ padding: 0 250px;
+}
+
+.nav-cont {
+    display: flex;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.logo-img {
+    width: 170px;
+    height: 100px;
+}
+
+.nav-logo h1 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+a:hover {
+    color: #3882f6;
+    font-weight: 500;
+}
+
+.header {
+    color: #f9faf8;
+    display: flex;
+}
+
+.description,
+.slide {
+    padding: 20px 0px 80px 0px;
+    flex: 1;
+}
+
+.description h1 {
+    margin: 0;
+}
+
+.description p {
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.description button {
+    background-color: #3882f6;
+    border: 0;
+    color:#f9faf8;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 4px 20px;
+}
+
+
+.slide img {
+    width: 100%;
+}
+
+
+.gym-routines {
+    background-color: #ffffff;
+    height: 100px;
+}
+
+.quote-bar {
+    background-color: #e5e7eb;
+    height: 100px;
+}
+
+.signup-bar {
+    background-color: #ffffff;
+    height: 100px;
+}
+
+.footer {
+    background-color: #1f2937;
+    height: 100px;
+}
