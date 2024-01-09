@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .nav-bar,
@@ -66,13 +67,12 @@ a:hover {
     flex: 1;
 }
 
-.description h1 {
-    margin: 0;
+.description {
+    padding-right: 25px;
 }
 
-.description p {
-    /* padding: 0; */
-    /* margin: 0; */
+.description h1 {
+    margin: 0;
 }
 
 .description button {
@@ -81,31 +81,168 @@ a:hover {
     color:#f9faf8;
     font-weight: 600;
     border-radius: 5px;
-    padding: 4px 20px;
+    padding: 6px 22px;
 }
-
 
 .slide img {
     width: 100%;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
 
 .gym-routines {
     background-color: #ffffff;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 130px;
 }
 
-.quote-bar {
+h2 {
+    margin: 40px 0;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+
+}
+
+.routines-container {
+    display: flex;
+    gap: 44px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 148px;
+    height: 148px;
+    gap: 10px;
+}
+
+.routine-box {
+    /* border: #3882f6 solid 3px; */
+    /* border-radius: 15px; */
+    width: 148px;
+    height: 148px;
+}
+
+.routine-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.routine-links {
+    color: #000 ;
+}
+
+.routine-box img:hover {
+    box-shadow: 0px 0px 15px;
+}
+
+.routine-links:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+    flex: auto;
+    /* font-size: px; */
+    padding-top: 15px;
+}
+
+.quote-frame {
     background-color: #e5e7eb;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 320px 90px 320px;
+
+
+}
+
+/* .quote-container {
+    display: flex;
+} */
+
+.quote-container p {
+    font-size: 36px;
+    font-weight:300;
+    font-style: italic;
+    color: #1f2937;
+    margin: 0;
+}
+
+.q-author {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.signup-frame {
+    background-color: #ffffff;
+    padding: 70px 250px;
 }
 
 .signup-bar {
-    background-color: #ffffff;
-    height: 100px;
+    background-color: #3882f6;
+    border-radius: 7px;
+    padding: 40px 80px;
+}
+
+.signup-content {
+    display: flex;
+}
+
+.sc-left {
+    flex: 4;
+}
+
+.sign-head {
+    font-weight: 600;
+    font-size: 18px;
+    color:#f9faf8;
+}
+
+.sign-text {
+    font-size: 14px;
+    color: #f9faf8;
+}
+
+.sc-right {
+    flex: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-right button {
+    background-color: #3882f6;
+    border:#f9faf8 solid 2px;
+    color:#f9faf8;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 .footer {
     background-color: #1f2937;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.copyrights {
+    color: #e5e7eb;
 }
